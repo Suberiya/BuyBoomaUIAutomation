@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Open Cart Regression Suite" verbose="3"
+	thread-count="5" parallel="tests">
+
+
+	<test name="Login Page Test">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.qa.booma.tests.LoginPageTest" />
+		</classes>
+	</test>
+	
+<!--	<test name="DashBoard Page Test">-->
+<!--		<classes>-->
+<!--			<class name="com.qa.booma.tests.DBMenuPageTest" />-->
+<!--		</classes>-->
+<!--	</test>-->
+	
+<!--	<test name="AddMulti Project PageTest">-->
+<!--		<parameter name="browser" value="chrome"/>-->
+<!--		<classes>-->
+<!--			<class name="com.qa.booma.tests.AddMultiProjectPageTest" />-->
+<!--		</classes>-->
+<!--	</test>-->
+<!--	<test name="Select Plot Project">-->
+<!--		<parameter name="browser" value="chrome"/>-->
+<!--		<classes>-->
+<!--			<class name="com.qa.booma.tests.SelectMultiProjecttypePopUpTest" />-->
+<!--		</classes>-->
+<!--		</test>-->
+		
+		<test name="Select Customer Page">
+			<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.qa.booma.tests.AddCustomerPageTest" />
+		</classes>
+	</test>
+		<test name="Enter Customer Details">
+			<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="com.qa.booma.tests.addCustomersPageTest" />
+		</classes>
+	</test>
+</suite>
