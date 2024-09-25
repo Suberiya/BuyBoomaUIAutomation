@@ -4,10 +4,10 @@
 	<listeners>
 		
 		
-		<listener class-name="com.qa.booma.listeners.ExtentReportListener"/>
-		
-		<listener class-name="com.qa.booma.listeners.TestAllureListener"/>
-		<listener class-name="com.qa.booma.listeners.AnnotationTransformer"/>
+<!--		<listener class-name="com.qa.booma.listeners.ExtentReportListener"/>-->
+<!--		-->
+<!--		<listener class-name="com.qa.booma.listeners.TestAllureListener"/>-->
+<!--		<listener class-name="com.qa.booma.listeners.AnnotationTransformer"/>-->
 		
 		
 	</listeners>
