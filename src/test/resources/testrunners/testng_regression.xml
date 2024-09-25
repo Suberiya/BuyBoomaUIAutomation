@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="BuyBooma Regression Suite" verbose="3" thread-count="4" parallel="tests">
-	<listeners>
+<!--	<listeners>-->
 		
 		
-		<listener class-name="com.qa.booma.listeners.ExtentReportListener"/>
+<!--		<listener class-name="com.qa.booma.listeners.ExtentReportListener"/>-->
+<!--		-->
+<!--		<listener class-name="com.qa.booma.listeners.TestAllureListener"/>-->
+<!--		<listener class-name="com.qa.booma.listeners.AnnotationTransformer"/>-->
 		
-		<listener class-name="com.qa.booma.listeners.TestAllureListener"/>
-		<listener class-name="com.qa.booma.listeners.AnnotationTransformer"/>
 		
-		
-	</listeners>
+<!--	</listeners>-->
 	
 	<!--		<listener -->
 	<!--					class-name="com.qa.opencart.listeners.AnnotationTransformer"/>-->
