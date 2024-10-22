@@ -42,12 +42,12 @@ public class ExtentReportListener implements ITestListener{
 		
 		extentReports = new ExtentReports();
 		ExtentSparkReporter reporter = new ExtentSparkReporter(OUTPUT_FOLDER + FILE_NAME);
-		reporter.config().setReportName("BuyBooma Automation Test Results");
+		reporter.config().setReportName("Open Cart Automation Test Results");
 		extentReports.attachReporter(reporter);
 		extentReports.setSystemInfo("System", "MAC");
 		extentReports.setSystemInfo("Author", "Suberiya Begum");
 		extentReports.setSystemInfo("Build#", "1.1");
-		extentReports.setSystemInfo("Team", "BuyBooma QA Team");
+		extentReports.setSystemInfo("Team", "OpenCart QA Team");
 		extentReports.setSystemInfo("Customer Name", "NAL");
 		extentReports.setSystemInfo("ENV NAME", System.getProperty("env"));
 
@@ -102,7 +102,7 @@ public class ExtentReportListener implements ITestListener{
 		String methodName = result.getMethod().getMethodName();
 		test.get().fail("Test failed");
 		test.get().fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(DriverFactory.getScreenshot(methodName), methodName).build());
-		//test.get().getModel().setEndTime(getTime(result.getEndMillis()));
+		test.get().getModel().setEndTime(getTime(result.getEndMillis()));
 	}
 
 	public synchronized void onTestSkipped(ITestResult result) {
