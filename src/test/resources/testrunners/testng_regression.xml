@@ -17,7 +17,7 @@
 	
 	
 	
-	<test name="Login Page Test">
+	<test name="Login Page Test TestNGRegression">
 		<parameter name="browser" value="chrome"/>
 		<classes>
 			<class name="com.qa.booma.tests.LoginPageTest" />
