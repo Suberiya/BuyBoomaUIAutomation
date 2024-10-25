@@ -65,7 +65,7 @@ public class BaseTest {
 //		softAssert = new SoftAssert();
 //	}
 	@Step("Setup: launching {0} browser & init the properties")
-	@Parameters({ "browser" })
+	@Parameters({"browser"})
 	@BeforeTest
 	public void setUp(String browserName) {
 		df = new DriverFactory();
