@@ -24,6 +24,8 @@ import com.qa.booma.pages.addCustomersPage;
 
 import com.qa.booma.pages.customersViewPage;
 
+import com.qa.booma.pages.customerEdit_InfoPage;
+
 //import io.qameta.allure.Step;
 
 public class BaseTest {
@@ -40,6 +42,8 @@ public class BaseTest {
 	protected AddCustomerPage AddCustomerPage;
 	protected addCustomersPage addCustomersPage;
 	protected customersViewPage customersViewPage;
+	protected  customerEdit_InfoPage customerEdit_InfoPage;
+	
 
 	protected SoftAssert softAssert;
 

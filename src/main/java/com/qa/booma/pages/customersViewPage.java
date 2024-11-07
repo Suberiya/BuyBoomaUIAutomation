@@ -27,6 +27,9 @@ public class customersViewPage {
 
 	By CustomerCode = By.xpath("//span[normalize-space()='Customer Code']");
 	By Address = By.xpath("//span[normalize-space()='Address']");
+	
+	By edit_icon= By.xpath("//main[@class='main']//button[2]");
+	
 
 	// actions
 
@@ -57,4 +60,15 @@ public class customersViewPage {
 		return address;
 	}
 
+	public customerEdit_InfoPage cus_editIcon()
+	{
+		eleUtil.doClick(edit_icon, 20);
+		
+		return new customerEdit_InfoPage(driver);
+	}
+
+	
+	
+	
+	
 }

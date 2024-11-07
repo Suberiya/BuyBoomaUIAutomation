@@ -9,8 +9,8 @@
 	<!--			-->
 	<!--	</listeners>-->
 	
-		
-		
+	
+	
 	
 	<test name="Login Page Test TestNGRegression">
 		<parameter name="browser" value="chrome"/>
@@ -28,8 +28,18 @@
 		<classes>
 			<class name="com.qa.booma.tests.customerViewPageTest" />
 		</classes>
-	</test>		
-		
+	</test>
+	
+	<test name="CustomerEdit Page Test TestNGRegression">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="browserversion" value="124.0"/>
+		<parameter name="testname" value="BuyBoomaTeam_CustomerEdit_PageTest"/>
+		<classes>
+			<class name="com.qa.booma.tests.customerEdit_InfoTest" />
+		</classes>
+	</test>
+	
+	
 	<!--				<test name="DashBoard Page Test_chrome113_Test">-->
 	<!--					<parameter name="browser" value="chrome"/>-->
 	<!--					<parameter name="browserversion" value="113.0"/>-->
