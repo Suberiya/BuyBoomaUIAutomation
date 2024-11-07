@@ -22,6 +22,8 @@ import io.qameta.allure.Step;
 
 import com.qa.booma.pages.addCustomersPage;
 
+import com.qa.booma.pages.customersViewPage;
+
 //import io.qameta.allure.Step;
 
 public class BaseTest {
@@ -37,6 +39,7 @@ public class BaseTest {
 	protected addVipContactsPage addVipContactsPage;
 	protected AddCustomerPage AddCustomerPage;
 	protected addCustomersPage addCustomersPage;
+	protected customersViewPage customersViewPage;
 
 	protected SoftAssert softAssert;
 
@@ -65,14 +68,17 @@ public class BaseTest {
 //		softAssert = new SoftAssert();
 //	}
 	@Step("Setup: launching {0} browser & init the properties")
-	@Parameters({"browser"})
+	@Parameters({"browser", "browserversion", "testname"})
 	@BeforeTest
-	public void setUp(String browserName) {
+	public void setUp(String browserName, String browserVersion, String testName) {
 		df = new DriverFactory();
 		prop = df.initProp();
 
 		if (browserName != null) {
 			prop.setProperty("browser", browserName);
+			prop.setProperty("browserversion", browserVersion);
+			prop.setProperty("testname", testName);
+			
 		}
 
 		driver = df.initDriver(prop);

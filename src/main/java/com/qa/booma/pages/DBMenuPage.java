@@ -131,5 +131,11 @@ public class DBMenuPage {
 
 		return new AddCustomerPage(driver);
 	}
+	
+	public  customersListallPage listallPage()
+	{
+		return null;
+		
+	}
 
 }

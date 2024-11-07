@@ -19,23 +19,33 @@
 	
 	<test name="Login Page TestSanity Page ">
 		<parameter name="browser" value="chrome"/>
+		<parameter name="browserversion" value="124.0"/>
+		
 		<classes>
 			<class name="com.qa.booma.tests.LoginPageTest" />
 		</classes>
 	</test>
 	
-	<!--	<test name="DashBoard Page Test">-->
-	<!--		<classes>-->
-	<!--			<class name="com.qa.booma.tests.DBMenuPageTest" />-->
-	<!--		</classes>-->
-	<!--	</test>-->
-	<!--	-->
-	<!--	<test name="AddMulti Project PageTest">-->
-	<!--		<parameter name="browser" value="firefox"/>-->
-	<!--		<classes>-->
-	<!--			<class name="com.qa.booma.tests.AddMultiProjectPageTest" />-->
-	<!--		</classes>-->
-	<!--	</test>-->
+	<test name="DashBoard Page Test">
+		
+		<parameter name="browser" value="chrome"/>
+		<parameter name="browserversion" value="113"/>
+		
+		<classes>
+			<class name="com.qa.booma.tests.DBMenuPageTest" />
+		</classes>
+	</test>
+	
+	<test name="AddMulti Project PageTest">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="browserversion" value="123.0"/>
+		<classes>
+			<class name="com.qa.booma.tests.AddMultiProjectPageTest" />
+		</classes>
+	</test>
+	
+	
+	
 	<!--	<test name="Select Plot Project">-->
 	<!--		<parameter name="browser" value="edge"/>-->
 	<!--		<classes>-->
