@@ -35,6 +35,12 @@ public class DBMenuPage {
 
 	private By leftcustomerMenu = By.xpath("//i[@class='nav-icon icon-people']");
 
+	// private By sss = By.cssSelector(".nav-icon.cui-comment-square");
+
+	//private By leftTicket = By.xpath("//a[contains(text(),'Ticket')]");
+
+	private By leftmenuBooking = By.xpath("//a[contains(text(),'Booking')]");
+	
 	private By scroll = By.xpath("//div[@class='ps__thumb-y']");
 
 	// Constructor
@@ -131,11 +137,12 @@ public class DBMenuPage {
 
 		return new AddCustomerPage(driver);
 	}
-	
-	public  customersListallPage listallPage()
-	{
-		return null;
-		
-	}
 
+	public customersListallPage listallPage() {
+		return null;
+	}
+	public addTicketPage leftmenuTicket() {
+		eleUtil.waitForElementPresence(leftmenuBooking, 50);
+		return new addTicketPage(driver);
+	}
 }

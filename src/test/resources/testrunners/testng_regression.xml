@@ -1,42 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="BuyBooma Regression Suite" verbose="3" thread-count="4" parallel="tests">
-	<listeners>
-	<listener class-name="com.qa.booma.listeners.ExtentReportListener"/>
-	<listener class-name="com.qa.booma.listeners.TestAllureListener"/>
-	<listener class-name="com.qa.booma.listeners.AnnotationTransformer"/>
-	
-		</listeners>
-	
-	
+	<!--	<listeners>-->
+	<!--	<listener class-name="com.qa.booma.listeners.ExtentReportListener"/>-->
+	<!--	<listener class-name="com.qa.booma.listeners.TestAllureListener"/>-->
+	<!--	<listener class-name="com.qa.booma.listeners.AnnotationTransformer"/>-->
+	<!--	-->
+	<!--		</listeners>-->
 	
 	
-	<test name="Login Page Test TestNGRegression">
+	
+	
+	<!--	<test name="Login Page Test TestNGRegression">-->
+	<!--		<parameter name="browser" value="chrome"/>-->
+	<!--		<parameter name="browserversion" value="124.0"/>-->
+	<!--		<parameter name="testname" value="BuyBoomaTeam_Login_PageTest"/>-->
+	<!--		-->
+	<!--		<classes>-->
+	<!--			<class name="com.qa.booma.tests.LoginPageTest" />-->
+	<!--		</classes>-->
+	<!--	</test>-->
+	<!--	<test name="CustomerView Page Test TestNGRegression">-->
+	<!--		<parameter name="browser" value="chrome"/>-->
+	<!--		<parameter name="browserversion" value="124.0"/>-->
+	<!--		<parameter name="testname" value="BuyBoomaTeam_CustomerView_PageTest"/>-->
+	<!--		<classes>-->
+	<!--			<class name="com.qa.booma.tests.customerViewPageTest" />-->
+	<!--		</classes>-->
+	<!--	</test>-->
+	<!--	-->
+	<!--	<test name="CustomerEdit Page Test TestNGRegression">-->
+	<!--		<parameter name="browser" value="chrome"/>-->
+	<!--		<parameter name="browserversion" value="124.0"/>-->
+	<!--		<parameter name="testname" value="BuyBoomaTeam_CustomerEdit_PageTest"/>-->
+	<!--		<classes>-->
+	<!--			<class name="com.qa.booma.tests.customerEdit_InfoTest" />-->
+	<!--		</classes>-->
+	<!--	</test>-->
+	
+	<test name="Add Ticket">
 		<parameter name="browser" value="chrome"/>
 		<parameter name="browserversion" value="124.0"/>
-		<parameter name="testname" value="BuyBoomaTeam_Login_PageTest"/>
-		
+		<parameter name="testname" value="BuyBoomaTeam_Click Ticket Page"/>
 		<classes>
-			<class name="com.qa.booma.tests.LoginPageTest" />
-		</classes>
-	</test>
-	<test name="CustomerView Page Test TestNGRegression">
-		<parameter name="browser" value="chrome"/>
-		<parameter name="browserversion" value="124.0"/>
-		<parameter name="testname" value="BuyBoomaTeam_CustomerView_PageTest"/>
-		<classes>
-			<class name="com.qa.booma.tests.customerViewPageTest" />
+			<class name="com.qa.booma.tests.addTicketPageTest" />
 		</classes>
 	</test>
 	
-	<test name="CustomerEdit Page Test TestNGRegression">
-		<parameter name="browser" value="chrome"/>
-		<parameter name="browserversion" value="124.0"/>
-		<parameter name="testname" value="BuyBoomaTeam_CustomerEdit_PageTest"/>
-		<classes>
-			<class name="com.qa.booma.tests.customerEdit_InfoTest" />
-		</classes>
-	</test>
+	<!--<test name="Add TicketBook Page">-->
+	<!--			<parameter name="browser" value="chrome"/>-->
+	<!--			<parameter name="browserversion" value="124.0"/>-->
+	<!--			<parameter name="testname" value="BuyBoomaTeam_Ticket Book Page"/>-->
+	<!--	<classes>-->
+	<!--				<class name="com.qa.booma.tests.addticketsPageTest" />-->
+	<!--			</classes>-->
+	<!--		</test>-->
 	
 	
 	<!--				<test name="DashBoard Page Test_chrome113_Test">-->
@@ -50,18 +68,18 @@
 	<!--				</test>-->
 	<!--				-->
 	<!--				-->
-	<!--				<test name="AddMulti Project PageTest">-->
-	<!--					<parameter name="browser" value="chrome"/>-->
-	<!--					<parameter name="browserversion" value="113.0"/>-->
-	<!--					<parameter name="testname" value="BuyBoomaTeam_Login_PageTest"/>-->
-	<!--					<classes>-->
-	<!--						<class name="com.qa.booma.tests.AddMultiProjectPageTest" />-->
-	<!--					</classes>-->
-	<!--				</test>-->
-	<!--				-->
-	<!--				-->
-	<!--				-->
-	<!--				-->
+<!--	<test name="AddMulti Project PageTest">-->
+<!--		<parameter name="browser" value="chrome"/>-->
+<!--		<parameter name="browserversion" value="113.0"/>-->
+<!--		<parameter name="testname" value="BuyBoomaTeam_Login_PageTest"/>-->
+<!--		<classes>-->
+<!--			<class name="com.qa.booma.tests.AddMultiProjectPageTest" />-->
+<!--		</classes>-->
+<!--	</test>-->
+	
+	
+	
+	
 	<!--	<parameter name="browser" value="chrome"/>-->
 	<!--				-->
 	<!--<classes>-->
@@ -69,23 +87,25 @@
 	<!--</classes>-->
 	<!--</test>-->
 	<!--				-->
-	<!--				<test name="Select Customer Page chrome 124 TEst">-->
-	<!--					<parameter name="browser" value="chrome"/>-->
-	<!--					<parameter name="browserversion" value="124.0"/>-->
-	<!--					<parameter name="testname" value="BuyBooma_Login_PageTest"/>-->
-	<!--					-->
-	<!--					<classes>-->
-	<!--						<class name="com.qa.booma.tests.AddCustomerPageTest" />-->
-	<!--					</classes>-->
-	<!--				</test>-->
-	<!--				-->
-	<!--				<test name="Enter Customer Details_fireFoxTest124.0">-->
-	<!--					<parameter name="browser" value="firefox"/>-->
-	<!--					<parameter name="browserversion" value="124.0"/>-->
-	<!--					<parameter name="testname" value="BuyBooma_Login_PageTest"/>-->
-	<!--					<classes>-->
-	<!--						<class name="com.qa.booma.tests.addCustomersPageTest" />-->
-	<!--					</classes>-->
-	<!--				</test>-->
+	
+	
+	<!--	<test name="Select Customer Page chrome 124 TEst">-->
+	<!--		<parameter name="browser" value="chrome"/>-->
+	<!--		<parameter name="browserversion" value="124.0"/>-->
+	<!--		<parameter name="testname" value="BuyBooma_AddCustomerPage_PageTest"/>-->
+	
+	<!--		<classes>-->
+	<!--			<class name="com.qa.booma.tests.AddCustomerPageTest" />-->
+	<!--		</classes>-->
+	<!--	</test>-->
+	
+	<!--	<test name="Enter Customer Details_fireFoxTest124.0">-->
+	<!--		<parameter name="browser" value="firefox"/>-->
+	<!--		<parameter name="browserversion" value="124.0"/>-->
+	<!--		<parameter name="testname" value="BuyBooma_AddCustomers_PageTest"/>-->
+	<!--		<classes>-->
+	<!--			<class name="com.qa.booma.tests.addCustomersPageTest" />-->
+	<!--		</classes>-->
+	<!--	</test>-->
 	
 </suite>

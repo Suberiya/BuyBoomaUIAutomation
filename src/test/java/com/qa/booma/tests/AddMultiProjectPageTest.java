@@ -21,7 +21,7 @@ public class AddMultiProjectPageTest extends BaseTest{
 		String actualheader =AddMultiProjectPage.getProjectHeader();
 		System.out.println("Add Project page header:" + actualheader);
 		Assert.assertEquals(actualheader, "Project List");
-		
+		 
 	}
 	
 }

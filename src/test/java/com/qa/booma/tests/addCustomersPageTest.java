@@ -30,7 +30,7 @@ public class addCustomersPageTest extends BaseTest {
 
 	@DataProvider
 	public Object[][] addCustomers() {
-		return new Object[][] { { "Priya", "suberiya@Gmail.com", "ETPPS1870B", "Bangalore", "24/07/1990", "S_OF",
+		return new Object[][] { { "John", "suberiya@Gmail.com", "ETPPS1870B", "Bangalore", "24/07/1992", "S_OF",
 				"Priya", "Married", "Bangalore", "IT", "MCA", "IT", "15L", "Indian" } };
 	}
 
