@@ -19,6 +19,8 @@ import com.qa.booma.pages.SelectMutliProjectTypePoUp;
 import com.qa.booma.pages.addVipContactsPage;
 import com.qa.booma.pages.addticketsPage;
 import com.qa.booma.pages.addTicketPage;
+import com.qa.booma.pages.addAgentPage;
+import com.qa.booma.pages.addAgentsPage;
 
 import io.qameta.allure.Step;
 
@@ -47,6 +49,8 @@ public class BaseTest {
 	protected customerEdit_InfoPage customerEdit_InfoPage;
 	protected addticketsPage addticketsPage;
 	protected addTicketPage addTicketPage;
+	protected addAgentPage addAgentPage;
+	protected addAgentsPage addAgentsPage;
 
 	protected SoftAssert softAssert;
 

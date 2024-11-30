@@ -8,18 +8,16 @@
 	<!--	-->
 	<!--		</listeners>-->
 	
+	<test name="Login Page Test TestNGRegression">
+	<parameter name="browser" value="chrome"/>
+	<parameter name="browserversion" value="124.0"/>
+	<parameter name="testname" value="BuyBoomaTeam_Login_PageTest"/>
 	
+	<classes>
+	<class name="com.qa.booma.tests.LoginPageTest" />
+	</classes>
+	</test>
 	
-	
-	<!--	<test name="Login Page Test TestNGRegression">-->
-	<!--		<parameter name="browser" value="chrome"/>-->
-	<!--		<parameter name="browserversion" value="124.0"/>-->
-	<!--		<parameter name="testname" value="BuyBoomaTeam_Login_PageTest"/>-->
-	<!--		-->
-	<!--		<classes>-->
-	<!--			<class name="com.qa.booma.tests.LoginPageTest" />-->
-	<!--		</classes>-->
-	<!--	</test>-->
 	<!--	<test name="CustomerView Page Test TestNGRegression">-->
 	<!--		<parameter name="browser" value="chrome"/>-->
 	<!--		<parameter name="browserversion" value="124.0"/>-->
@@ -38,16 +36,35 @@
 	<!--		</classes>-->
 	<!--	</test>-->
 	
-	<test name="Add Ticket">
+<!--	<test name="Add Ticket">-->
+<!--		<parameter name="browser" value="chrome"/>-->
+<!--		<parameter name="browserversion" value="124.0"/>-->
+<!--		<parameter name="testname" value="BuyBoomaTeam_Click Ticket Page"/>-->
+<!--		<classes>-->
+<!--			<class name="com.qa.booma.tests.addTicketPageTest" />-->
+<!--		</classes>-->
+<!--	</test>-->
+	
+<!--	<test name="Add Agent">-->
+<!--		<parameter name="browser" value="chrome"/>-->
+<!--		<parameter name="browserversion" value="124.0"/>-->
+<!--		<parameter name="testname" value="BuyBoomaTeam_Click Agent Page"/>-->
+<!--		<classes>-->
+<!--			<class name="com.qa.booma.tests.addAgentPageTest" />-->
+<!--		</classes>-->
+<!--	</test>-->
+
+	
+	<test name="Add Agents Page">
 		<parameter name="browser" value="chrome"/>
 		<parameter name="browserversion" value="124.0"/>
-		<parameter name="testname" value="BuyBoomaTeam_Click Ticket Page"/>
+		<parameter name="testname" value="BuyBoomaTeam_Click Agent Page"/>
 		<classes>
-			<class name="com.qa.booma.tests.addTicketPageTest" />
+			<class name="com.qa.booma.tests.addAgentsPageTest" />
 		</classes>
 	</test>
 	
-	<!--<test name="Add TicketBook Page">-->
+		<!--<test name="Add TicketBook Page">-->
 	<!--			<parameter name="browser" value="chrome"/>-->
 	<!--			<parameter name="browserversion" value="124.0"/>-->
 	<!--			<parameter name="testname" value="BuyBoomaTeam_Ticket Book Page"/>-->
@@ -107,5 +124,5 @@
 	<!--			<class name="com.qa.booma.tests.addCustomersPageTest" />-->
 	<!--		</classes>-->
 	<!--	</test>-->
-	
-</suite>
+	 
+</suite> 

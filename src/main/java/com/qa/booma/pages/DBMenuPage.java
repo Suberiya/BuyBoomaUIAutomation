@@ -41,7 +41,14 @@ public class DBMenuPage {
 
 	private By leftmenuBooking = By.xpath("//a[contains(text(),'Booking')]");
 	
+	private By leftAgent= By.xpath("//i[@class='nav-icon icon-user']");
+	
 	private By scroll = By.xpath("//div[@class='ps__thumb-y']");
+	private By allMenuListTop =By.xpath("//ul[@class='hide-on-mobile-tablet navbar-nav']//li[@class='nav-item']");
+	
+	
+	
+	
 
 	// Constructor
 	DBMenuPage(WebDriver driver) {
@@ -145,4 +152,15 @@ public class DBMenuPage {
 		eleUtil.waitForElementPresence(leftmenuBooking, 50);
 		return new addTicketPage(driver);
 	}
+	
+	public addAgentPage leftMenuAgent() throws InterruptedException
+	{
+		
+		Thread.sleep(500);
+		//eleUtil.waitForElementPresence(allMenuListTop, 50);
+		eleUtil.doClick(leftAgent, 50);
+		return new addAgentPage(driver);
+	}
 }
+
+

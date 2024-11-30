@@ -71,7 +71,8 @@ public class addCustomersPageTest extends BaseTest {
 	// @Test(dataProvider = "getUserRegTestDataFromExcel")
 	public void addCust(String customerName, String email, String pan, String address, String dob,
 			String relationshipOf, String relationName, String maritalStatus, String currentResidence,
-			String occupation, String qualification, String designation, String Monthlyincome, String nationality) {
+			String occupation, String qualification, String designation, String Monthlyincome, String nationality)
+	{
 		addCustomersPage.addCustomersPage(customerName, email, StringUtils.getRandomNumber(),
 				StringUtils.getRandomNumber(), StringUtils.getRandomAadarNumber(),
 
